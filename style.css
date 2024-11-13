@@ -1,0 +1,112 @@
+.hover-animate {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.hover-animate:hover {
+    transform: scale(1.05); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #fca3a3;
+}
+
+body {
+    background-color: #ff6161;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.hover-animate:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(190, 15, 15, 0.3);
+}
+
+.hover-animate.animate__animated:hover {
+    animation-duration: 0.8s; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff; 
+}
+
+.social-icons a.linkedin {
+    color: #0077b5;
+}
+
+.social-icons a.github {
+    color: #333;
+}
+
+.social-icons a.twitter {
+    color: #1da1f2;
+}
+
+.social-icons a.instagram {
+    color: #e4405f;
+}
+
+.social-icons a.behance {
+    color: #1769ff;
+}
+
+.social-icons a.dribbble {
+    color: #ea4c89;
+}
+
+@media (max-width: 768px) {
+    .row-cols-md-3 {
+        row-gap: 20px;
+    }
+}
