@@ -1,18 +1,8 @@
-.hover-animate {
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-
-.hover-animate:hover {
-    transform: scale(1.05); 
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-color: #fca3a3;
 }
 
 body {
@@ -23,7 +13,8 @@ body {
     padding: 20px;
 }
 
-.card {
+/* Estilo dos cartões */
+.custom-card {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -55,13 +46,15 @@ body {
     margin-bottom: 10px;
 }
 
-.hover-animate:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 8px 16px rgba(190, 15, 15, 0.3);
+/* Animação ao passar o mouse */
+.hover-animate {
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-.hover-animate.animate__animated:hover {
-    animation-duration: 0.8s; 
+.hover-animate:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(190, 15, 15, 0.3);
 }
 
 .social-icons {
